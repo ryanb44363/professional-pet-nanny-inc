@@ -67,7 +67,7 @@ const Index = () => (
     <section id="services" className="container-px mx-auto py-24">
       <SectionHeading
         eyebrow="Our Services"
-        title={<>Loving care for every <span className="text-gradient">tail & whisker</span></>}
+        title={<>Loving care for every<br /><span className="text-gradient">tail & whisker</span></>}
         subtitle="From a quick midday walk to overnight stays, we tailor every visit to your pet's routine."
       />
       <div className="mt-14"><ServicesGrid /></div>
