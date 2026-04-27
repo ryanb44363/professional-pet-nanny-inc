@@ -27,6 +27,8 @@ export const SEO = ({ title, description, path = "/", schema }: Props) => {
     setMeta("og:description", description, "property");
     setMeta("og:type", "website", "property");
     setMeta("og:url", `${SITE.url}${path}`, "property");
+    setMeta("og:image", `${SITE.url}/og-image.png`, "property");
+    setMeta("twitter:image", `${SITE.url}/og-image.png`);
     setMeta("twitter:card", "summary_large_image");
     setMeta("twitter:title", title);
     setMeta("twitter:description", description);
