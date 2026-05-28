@@ -26,6 +26,7 @@ export const Footer = () => (
               <Link to={n.to} className="text-white/70 transition hover:text-primary-glow">{n.label}</Link>
             </li>
           ))}
+          <li><Link to="/reviews" className="text-white/70 transition hover:text-primary-glow">Reviews</Link></li>
           <li><Link to="/facts" className="text-white/70 transition hover:text-primary-glow">Company Facts</Link></li>
         </ul>
       </div>
