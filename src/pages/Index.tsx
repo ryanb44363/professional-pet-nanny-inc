@@ -145,9 +145,14 @@ const Index = () => (
         subtitle="Voted Best of Cincinnati • BBB A+ Accredited • 10× Angie's List Super Service Award"
       />
       <div className="mt-14"><Testimonials /></div>
-      <p className="reveal mt-8 text-center text-sm text-muted-foreground">
-        Google Reviews integration coming soon - verified 5-star testimonials from Cincinnati & NKY families.
-      </p>
+      <div className="reveal mt-10 text-center">
+        <Link
+          to="/reviews"
+          className="btn-glow inline-flex items-center gap-2 rounded-full bg-primary-gradient px-6 py-3.5 text-sm font-bold text-primary-foreground shadow-glow"
+        >
+          Read All Reviews <ArrowRight className="h-4 w-4" />
+        </Link>
+      </div>
     </section>
 
     {/* Service Area */}
