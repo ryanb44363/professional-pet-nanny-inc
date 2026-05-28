@@ -15,10 +15,10 @@ import About from "./pages/About.tsx";
 import Contact from "./pages/Contact.tsx";
 import Facts from "./pages/Facts.tsx";
 import Reviews from "./pages/Reviews.tsx";
-import Reviews from "./pages/Reviews.tsx";
 import Blog from "./pages/Blog.tsx";
 import BlogPost from "./pages/BlogPost.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import { PrivacyPage, TermsPage, DisclaimerPage, AccessibilityPage } from "./pages/Legal.tsx";
 
 const queryClient = new QueryClient();
 
@@ -49,11 +49,11 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/facts" element={<Facts />} />
           <Route path="/reviews" element={<Reviews />} />
-          <Route path="/privacy" element={<PrivacyPage />} />
-          <Route path="/terms" element={<TermsPage />} />
-          <Route path="/reviews" element={<Reviews />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/terms" element={<TermsPage />} />
+          <Route path="/disclaimer" element={<DisclaimerPage />} />
           <Route path="/accessibility" element={<AccessibilityPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
