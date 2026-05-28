@@ -127,13 +127,19 @@ const Index = () => (
           title={<>Everything your pet needs, <span className="text-gradient">all in one place</span></>}
         />
         <ul className="reveal mx-auto mt-12 grid max-w-4xl gap-3 sm:grid-cols-2">
-          {allServices.map((s) => (
-            <li key={s} className="card-hover flex items-center gap-3 rounded-2xl bg-card px-5 py-4 shadow-card">
+          {allServices.map((s, i) => (
+            <li
+              key={s}
+              className={`card-hover flex items-center gap-3 rounded-2xl bg-card px-5 py-4 shadow-card ${
+                i === allServices.length - 1 ? "sm:col-span-2" : ""
+              }`}
+            >
               <CheckCircle2 className="h-5 w-5 shrink-0 text-primary" />
               <span className="font-semibold text-ink">{s}</span>
             </li>
           ))}
         </ul>
+
       </div>
     </section>
 
