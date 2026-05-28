@@ -1,19 +1,17 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, MessageSquare } from "lucide-react";
 import { SITE, NAV } from "@/lib/site";
-import { PawPrint } from "@/components/PawPrint";
+import logo from "@/assets/logo.png";
 
 export const Footer = () => (
   <footer className="relative mt-24 overflow-hidden bg-ink text-white/85">
     <div className="absolute -top-24 left-1/3 h-64 w-64 animate-blob bg-primary/30 blur-3xl" aria-hidden />
     <div className="container-px mx-auto grid gap-10 py-16 md:grid-cols-4">
       <div>
-        <div className="flex items-center gap-2.5">
-          <span className="grid h-10 w-10 place-items-center rounded-2xl bg-primary-gradient">
-            <PawPrint className="h-5 w-5" />
-          </span>
+        <Link to="/" className="group flex items-center gap-2.5" aria-label="Professional Pet Nanny home">
+          <img src={logo} alt="Professional Pet Nanny" className="h-10 w-auto transition-transform group-hover:scale-[1.03]" />
           <span className="font-display text-lg font-bold text-white">Professional Pet Nanny</span>
-        </div>
+        </Link>
         <p className="mt-4 text-sm text-white/70">{SITE.tagline}</p>
         <p className="mt-2 text-xs text-white/50">Bonded & Insured • Pet CPR & First-Aid Certified • BBB A+</p>
       </div>
