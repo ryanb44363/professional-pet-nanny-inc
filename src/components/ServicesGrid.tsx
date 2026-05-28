@@ -3,6 +3,8 @@ import { ArrowUpRight } from "lucide-react";
 import dogImg from "@/assets/dog-walking.jpg";
 import petImg from "@/assets/pet-sitting.jpg";
 import nightImg from "@/assets/overnight.jpg";
+import puppyImg from "@/assets/smart-puppy.jpg";
+import emergencyImg from "@/assets/emergency-pet.jpg";
 
 const services = [
   {
@@ -24,8 +26,20 @@ const services = [
     img: nightImg,
     to: "/overnight-pet-sitting",
   },
+  {
+    title: "Smart Puppy Plan",
+    desc: "Frequent visits, socialization, and training reinforcement for puppies in their most important months.",
+    img: puppyImg,
+    to: "/smart-puppy-plan",
+    tag: "New",
+  },
+  {
+    title: "Emergency Pet Sitting",
+    desc: "Same-day and short-notice care for hospital stays, travel delays, and the unexpected. Call us anytime.",
+    img: emergencyImg,
+    to: "/emergency-pet-sitting",
+  },
 ];
-
 export const ServicesGrid = () => (
   <div className="grid gap-6 md:grid-cols-3">
     {services.map((s, i) => (
