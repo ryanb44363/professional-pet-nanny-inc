@@ -53,8 +53,14 @@ export const Footer = () => (
     </div>
 
     <div className="border-t border-white/10">
-      <div className="container-px mx-auto flex flex-col items-center justify-between gap-2 py-6 text-xs text-white/50 md:flex-row">
+      <div className="container-px mx-auto flex flex-col items-center justify-between gap-3 py-6 text-xs text-white/50 md:flex-row">
         <p>© {new Date().getFullYear()} {SITE.name}. All rights reserved.</p>
+        <ul className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+          <li><Link to="/privacy" className="hover:text-primary-glow">Privacy Policy</Link></li>
+          <li><Link to="/terms" className="hover:text-primary-glow">Terms of Service</Link></li>
+          <li><Link to="/disclaimer" className="hover:text-primary-glow">Disclaimer</Link></li>
+          <li><Link to="/accessibility" className="hover:text-primary-glow">Accessibility</Link></li>
+        </ul>
         <p>Locally owned & operated for {SITE.yearsInBusiness}+ years.</p>
       </div>
     </div>
