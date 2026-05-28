@@ -26,7 +26,7 @@ const Contact = () => (
       </div>
     </section>
 
-    <section className="container-px mx-auto -mt-16 grid gap-6 pb-20 lg:grid-cols-3">
+    <section className="container-px relative z-10 mx-auto -mt-16 grid gap-6 pb-20 lg:grid-cols-3">
       {[
         { i: Phone, t: "Call us", v: SITE.phone, h: SITE.phoneHref },
         { i: MessageSquare, t: "Text us", v: "Send a quick text", h: SITE.smsHref },
