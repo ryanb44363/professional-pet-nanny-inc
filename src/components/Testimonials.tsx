@@ -4,7 +4,7 @@ const reviews = [
   {
     name: "Jennifer M.",
     location: "Hyde Park, Cincinnati",
-    text: "Professional Pet Nanny has cared for our two labs for over 8 years. They treat them like family — we won't trust anyone else.",
+    text: "Professional Pet Nanny has cared for our two labs for over 8 years. They treat them like family - we won't trust anyone else.",
   },
   {
     name: "David & Amy R.",

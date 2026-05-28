@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 const Contact = () => (
   <Layout>
     <SEO
-      title="Book Now | Contact Professional Pet Nanny — Cincinnati & NKY"
+      title="Book Now | Contact Professional Pet Nanny - Cincinnati & NKY"
       description="Book pet sitting, dog walking, or overnight care. Call 513-244-7373 or request services online. Serving Greater Cincinnati & Northern Kentucky."
       path="/contact"
     />
@@ -21,7 +21,7 @@ const Contact = () => (
           Let's plan <span className="text-gradient">happy days at home.</span>
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-white/80">
-          Call, text, or send us a quick request — we'll reply within one business day to schedule your free meet-and-greet.
+          Call, text, or send us a quick request - we'll reply within one business day to schedule your free meet-and-greet.
         </p>
       </div>
     </section>

@@ -9,7 +9,7 @@ import img from "@/assets/pet-sitting.jpg";
 import { SITE } from "@/lib/site";
 
 const features = [
-  "In-home care — pets stay in familiar surroundings",
+  "In-home care - pets stay in familiar surroundings",
   "Meet your Pet Nanny before you depart",
   "Feeding on your pet's regular schedule",
   "Medication administration where appropriate",
@@ -19,8 +19,8 @@ const features = [
 
 const faqs = [
   { q: "How many visits per day do you recommend?", a: "Most cats do well with one daily visit; dogs typically need 2–4 visits depending on age and routine. We'll recommend a schedule during your meet-and-greet." },
-  { q: "Can you give medications?", a: "Yes — pills, liquids, and most injections (such as insulin) can be administered. We'll confirm specifics during the meet-and-greet." },
-  { q: "What's a 'daily diary'?", a: "A short note (and photos!) after every visit so you know exactly how your pet is doing — meals, walks, mood, and any updates from your home." },
+  { q: "Can you give medications?", a: "Yes - pills, liquids, and most injections (such as insulin) can be administered. We'll confirm specifics during the meet-and-greet." },
+  { q: "What's a 'daily diary'?", a: "A short note (and photos!) after every visit so you know exactly how your pet is doing - meals, walks, mood, and any updates from your home." },
 ];
 
 const schema = {

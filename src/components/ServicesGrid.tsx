@@ -20,7 +20,7 @@ const services = [
   },
   {
     title: "Overnight Pet Sitting",
-    desc: "Afternoon & evening check-in plus an overnight stay in your home — comfort and security all night.",
+    desc: "Afternoon & evening check-in plus an overnight stay in your home - comfort and security all night.",
     img: nightImg,
     to: "/overnight-pet-sitting",
   },

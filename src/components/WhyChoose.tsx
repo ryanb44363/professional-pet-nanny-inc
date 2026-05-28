@@ -5,7 +5,7 @@ const items = [
   { icon: ShieldCheck, title: "Bonded & Insured", text: "Every nanny is fully background-checked and insured." },
   { icon: HeartPulse, title: "CPR & First-Aid", text: "Pet CPR and first-aid certified for every pet, every visit." },
   { icon: Users, title: "Meet Before We Sit", text: "A complimentary meet-and-greet before any service begins." },
-  { icon: Home, title: "In-Home Comfort", text: "Pets stay where they're happiest — their own home." },
+  { icon: Home, title: "In-Home Comfort", text: "Pets stay where they're happiest - their own home." },
   { icon: Clock, title: "Flexible & On-Time", text: "Regular, as-needed, same-day, and emergency support." },
 ];
 

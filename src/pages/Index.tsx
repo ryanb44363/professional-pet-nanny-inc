@@ -83,7 +83,7 @@ const Index = () => (
             Online booking is <span className="text-gradient">accurate, simple & convenient.</span>
           </h2>
           <p className="mt-5 text-base text-muted-foreground sm:text-lg">
-            Request services in minutes — pick your dates, share a few details about your pet, and we'll confirm your nanny.
+            Request services in minutes - pick your dates, share a few details about your pet, and we'll confirm your nanny.
             Every new client gets a complimentary meet-and-greet first.
           </p>
           <BookNowDropdown
@@ -114,7 +114,7 @@ const Index = () => (
       <SectionHeading
         eyebrow="Why Choose Us"
         title={<>Why families across Cincinnati <span className="text-gradient">trust us</span></>}
-        subtitle="Two decades of experience, certifications, and genuine love for animals — all in your own home."
+        subtitle="Two decades of experience, certifications, and genuine love for animals - all in your own home."
       />
       <div className="mt-14"><WhyChoose /></div>
     </section>
@@ -146,7 +146,7 @@ const Index = () => (
       />
       <div className="mt-14"><Testimonials /></div>
       <p className="reveal mt-8 text-center text-sm text-muted-foreground">
-        Google Reviews integration coming soon — verified 5-star testimonials from Cincinnati & NKY families.
+        Google Reviews integration coming soon - verified 5-star testimonials from Cincinnati & NKY families.
       </p>
     </section>
 
