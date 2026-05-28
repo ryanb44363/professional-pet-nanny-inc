@@ -13,13 +13,10 @@ export const StickyCTA = () => (
         <span className="md:hidden">Call</span>
         <span className="hidden md:inline">{SITE.phone}</span>
       </a>
-      <Link
-        to={SITE.bookHref}
-        className="btn-glow flex flex-1 items-center justify-center gap-2 rounded-full bg-primary-gradient px-4 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition hover:scale-[1.02] md:flex-none md:px-6"
-      >
-        <Calendar className="h-4 w-4" />
-        Book Now
-      </Link>
+      <BookNowDropdown
+        triggerClassName="btn-glow flex flex-1 items-center justify-center gap-2 rounded-full bg-primary-gradient px-4 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition hover:scale-[1.02] md:flex-none md:px-6"
+        showIcon={false}
+      />
     </div>
   </div>
 );
