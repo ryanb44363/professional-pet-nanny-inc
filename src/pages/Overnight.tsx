@@ -18,7 +18,7 @@ const features = [
 ];
 
 const faqs = [
-  { q: "What hours does an overnight stay cover?", a: "Typically your nanny arrives in the late afternoon or evening, stays overnight in your home, and provides a morning visit before departing — usually a 12+ hour window of care." },
+  { q: "What hours does an overnight stay cover?", a: "Typically your nanny arrives in the late afternoon or evening, stays overnight in your home, and provides a morning visit before departing - usually a 12+ hour window of care." },
   { q: "Is the nanny home the entire night?", a: "Yes. Overnight Pet Sitting means your nanny sleeps in your home so your pet has continuous overnight comfort and security." },
   { q: "Will my home stay secure?", a: "Absolutely. All Pet Nannies are bonded, insured, and background-checked. Many clients also enjoy the added peace of a clearly occupied home." },
 ];
@@ -42,7 +42,7 @@ const Overnight = () => (
     <ServiceHero
       eyebrow="Overnight Pet Sitting"
       title="Restful nights for them. Restful nights for you."
-      subtitle="Afternoon and evening check-in plus an overnight stay in the comfort of your home — true companionship through the night."
+      subtitle="Afternoon and evening check-in plus an overnight stay in the comfort of your home - true companionship through the night."
       image={img}
     />
 

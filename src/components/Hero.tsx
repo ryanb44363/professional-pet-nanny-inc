@@ -24,7 +24,7 @@ export const Hero = () => (
         </p>
         <p className="mt-4 max-w-xl text-base text-white/80 sm:text-lg">
           Professional, bonded, and CPR-certified pet sitters serving {SITE.serviceArea} for over {SITE.yearsInBusiness} years.
-          Dog walking, pet sitting, and overnight stays — in the comfort of your own home.
+          Dog walking, pet sitting, and overnight stays - in the comfort of your own home.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-3">

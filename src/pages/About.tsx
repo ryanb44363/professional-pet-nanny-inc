@@ -33,7 +33,7 @@ const About = () => (
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-lg text-white/80">
           {SITE.name} has been Cincinnati & Northern Kentucky's go-to in-home pet care team since the early 2000s.
-          We treat every pet like our own — and every home with respect.
+          We treat every pet like our own - and every home with respect.
         </p>
       </div>
     </section>

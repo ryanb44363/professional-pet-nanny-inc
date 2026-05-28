@@ -86,7 +86,7 @@ export const InquiryForm = () => {
       </div>
       <div className="sm:col-span-2">
         <label className={labelCls} htmlFor="message">Tell us about your pet(s)</label>
-        <textarea id="message" name="message" rows={4} className={inputCls} placeholder="Anything we should know — routines, meds, quirks…" maxLength={800} />
+        <textarea id="message" name="message" rows={4} className={inputCls} placeholder="Anything we should know - routines, meds, quirks…" maxLength={800} />
       </div>
       <div className="sm:col-span-2">
         <button

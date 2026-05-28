@@ -12,14 +12,14 @@ const features = [
   "Reliable, professional and timely visits",
   "Flexible scheduling: regular, as-needed, or same-day",
   "Meet your regular dog walker before services begin",
-  "Consistent walker — your dog's familiar friend",
+  "Consistent walker - your dog's familiar friend",
   "GPS-confirmed visits with photos & notes",
   "Bonded, insured, CPR & First-Aid certified",
 ];
 
 const faqs = [
   { q: "How long are dog walks?", a: "Most walks are 20, 30, or 45 minutes. We'll recommend the right length based on your dog's age, breed, and energy level." },
-  { q: "Will I have the same dog walker each time?", a: "Yes — we assign a regular nanny so your dog builds a trusting bond and a consistent routine." },
+  { q: "Will I have the same dog walker each time?", a: "Yes - we assign a regular nanny so your dog builds a trusting bond and a consistent routine." },
   { q: "Can I book same-day walks?", a: "Yes, subject to availability. Existing clients can request same-day walks easily through our booking system or by calling 513-244-7373." },
 ];
 
