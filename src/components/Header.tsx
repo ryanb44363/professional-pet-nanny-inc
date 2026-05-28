@@ -3,7 +3,6 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { NAV, SITE } from "@/lib/site";
 import { cn } from "@/lib/utils";
-import { BookNowDropdown } from "@/components/BookNowDropdown";
 import logo from "@/assets/logo.png";
 
 export const Header = () => {
@@ -54,9 +53,18 @@ export const Header = () => {
           <a href={SITE.phoneHref} className="flex items-center gap-2 rounded-full px-3 py-2 text-sm font-semibold text-ink hover:text-primary">
             <Phone className="h-4 w-4" /> {SITE.phone}
           </a>
-          <BookNowDropdown
-            triggerClassName="btn-glow rounded-full bg-primary-gradient px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow"
-          />
+          <a
+            href={SITE.existingClientHref}
+            className="rounded-full px-3 py-2 text-sm font-semibold text-ink/70 hover:text-primary transition"
+          >
+            Existing Customer
+          </a>
+          <a
+            href={SITE.newClientHref}
+            className="btn-glow rounded-full bg-primary-gradient px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow"
+          >
+            Book Now
+          </a>
         </div>
 
         <button
@@ -89,10 +97,19 @@ export const Header = () => {
             <a href={SITE.phoneHref} className="mt-2 flex items-center gap-2 rounded-xl bg-secondary px-4 py-3 text-base font-semibold text-ink">
               <Phone className="h-4 w-4 text-primary" /> {SITE.phone}
             </a>
-            <div className="mt-2 px-4">
-              <BookNowDropdown
-                triggerClassName="btn-glow w-full justify-center rounded-full bg-primary-gradient px-5 py-3 text-sm font-semibold text-primary-foreground shadow-glow"
-              />
+            <div className="mt-2 flex flex-col gap-2 px-4">
+              <a
+                href={SITE.existingClientHref}
+                className="w-full rounded-full bg-secondary px-5 py-3 text-center text-sm font-semibold text-ink transition hover:bg-secondary/80"
+              >
+                Existing Customer
+              </a>
+              <a
+                href={SITE.newClientHref}
+                className="btn-glow w-full rounded-full bg-primary-gradient px-5 py-3 text-center text-sm font-semibold text-primary-foreground shadow-glow"
+              >
+                Book Now
+              </a>
             </div>
           </nav>
         </div>
