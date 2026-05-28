@@ -17,10 +17,10 @@
 
     /* Brand */
     --primary: 270 75% 38%;
+    --primary: 256 49% 39%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 280 85% 62%;
-    --primary-deep: 272 80% 22%;
-
+    --primary-glow: 256 70% 62%;
+    --primary-deep: 256 55% 22%;
     --secondary: 270 25% 95%;
     --secondary-foreground: 270 60% 20%;
 
