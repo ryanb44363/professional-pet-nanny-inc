@@ -28,7 +28,7 @@ export const Header = () => {
     >
       <div className="container-px mx-auto flex items-center justify-between py-4">
         <Link to="/" className="group flex items-center" aria-label="Professional Pet Nanny home">
-          <img src={logo} alt="Professional Pet Nanny" className="h-14 w-auto sm:h-16 transition-transform group-hover:scale-[1.03]" />
+          <img src={logo} alt="Professional Pet Nanny" className="h-[5.25rem] w-auto sm:h-24 transition-transform group-hover:scale-[1.03]" />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
