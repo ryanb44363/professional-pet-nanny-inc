@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { NAV, SITE } from "@/lib/site";
-import { PawPrint } from "@/components/PawPrint";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/logo.png";
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -27,14 +27,8 @@ export const Header = () => {
       )}
     >
       <div className="container-px mx-auto flex items-center justify-between py-4">
-        <Link to="/" className="group flex items-center gap-2.5">
-          <span className="grid h-10 w-10 place-items-center rounded-2xl bg-primary-gradient text-primary-foreground shadow-glow transition-transform group-hover:rotate-[-8deg]">
-            <PawPrint className="h-5 w-5" />
-          </span>
-          <span className="leading-tight">
-            <span className="block font-display text-base font-bold text-ink sm:text-lg">Professional Pet Nanny</span>
-            <span className="hidden text-[11px] font-medium uppercase tracking-widest text-primary sm:block">Cincinnati • NKY</span>
-          </span>
+        <Link to="/" className="group flex items-center" aria-label="Professional Pet Nanny home">
+          <img src={logo} alt="Professional Pet Nanny" className="h-14 w-auto sm:h-16 transition-transform group-hover:scale-[1.03]" />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
