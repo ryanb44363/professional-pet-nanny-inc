@@ -20,19 +20,23 @@ export const PawPrint = ({ className, filled = true }: Props) => (
 export const PawTrail = ({ className }: { className?: string }) => (
   <div className={cn("pointer-events-none absolute inset-0 overflow-hidden", className)} aria-hidden="true">
     {[
-      { top: "10%", left: "5%", r: -20, d: "0s" },
-      { top: "30%", left: "12%", r: 15, d: "1.5s" },
-      { top: "55%", left: "8%", r: -10, d: "3s" },
-      { top: "75%", left: "16%", r: 25, d: "0.8s" },
-      { top: "20%", right: "8%", r: 18, d: "2.2s" },
-      { top: "60%", right: "12%", r: -22, d: "1.1s" },
-    ].map((p, i) => (
-      <PawPrint
-        key={i}
-        className="absolute h-6 w-6 text-primary/15 animate-float-slow"
-        // @ts-ignore
-        style={{ ...p, animationDelay: p.d, transform: `rotate(${p.r}deg)` }}
-      />
-    ))}
+      { top: "10%", left: "5%", r: -20, d: "0s", size: "h-6 w-6" },
+      { top: "30%", left: "12%", r: 15, d: "1.5s", size: "h-6 w-6" },
+      { top: "55%", left: "8%", r: -10, d: "3s", size: "h-6 w-6" },
+      { top: "75%", left: "16%", r: 25, d: "0.8s", size: "h-6 w-6" },
+      { top: "8%", right: "6%", r: 18, d: "2.2s", size: "h-16 w-16 sm:h-20 sm:w-20" },
+      { top: "60%", right: "12%", r: -22, d: "1.1s", size: "h-6 w-6" },
+    ].map((p, i) => {
+      const { size, r, d, ...pos } = p;
+      return (
+        <PawPrint
+          key={i}
+          className={cn("absolute text-primary/15 animate-float-slow", size)}
+          // @ts-ignore
+          style={{ ...pos, animationDelay: d, transform: `rotate(${r}deg)` }}
+        />
+      );
+    })}
   </div>
 );
+
