@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, MessageSquare } from "lucide-react";
 import { SITE, NAV } from "@/lib/site";
-import { PawPrint } from "@/components/PawPrint";
+import logo from "@/assets/logo.png";
 
 export const Footer = () => (
   <footer className="relative mt-24 overflow-hidden bg-ink text-white/85">
