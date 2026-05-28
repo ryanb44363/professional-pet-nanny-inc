@@ -15,7 +15,7 @@ const Contact = () => (
 
     <section className="relative overflow-hidden bg-hero text-white">
       <PawTrail />
-      <div className="container-px mx-auto py-16 text-center">
+      <div className="container-px mx-auto py-16 pb-28 text-center md:pb-32">
         <span className="inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest">Book Now</span>
         <h1 className="mx-auto mt-6 max-w-3xl font-display text-5xl font-black leading-[1] sm:text-6xl">
           Let's plan <span className="text-gradient">happy days at home.</span>
@@ -26,7 +26,7 @@ const Contact = () => (
       </div>
     </section>
 
-    <section className="container-px mx-auto -mt-10 grid gap-6 pb-20 lg:grid-cols-3">
+    <section className="container-px mx-auto -mt-16 grid gap-6 pb-20 lg:grid-cols-3">
       {[
         { i: Phone, t: "Call us", v: SITE.phone, h: SITE.phoneHref },
         { i: MessageSquare, t: "Text us", v: "Send a quick text", h: SITE.smsHref },
