@@ -9,6 +9,7 @@ import { Testimonials } from "@/components/Testimonials";
 import { CTASection } from "@/components/CTASection";
 import { SectionHeading } from "@/components/SectionHeading";
 import { FAQ } from "@/components/FAQ";
+import { BookNowDropdown } from "@/components/BookNowDropdown";
 import { SITE } from "@/lib/site";
 
 const allServices = [
@@ -85,9 +86,11 @@ const Index = () => (
             Request services in minutes — pick your dates, share a few details about your pet, and we'll confirm your nanny.
             Every new client gets a complimentary meet-and-greet first.
           </p>
-          <Link to={SITE.bookHref} className="btn-glow mt-7 inline-flex items-center gap-2 rounded-full bg-primary-gradient px-6 py-3.5 text-sm font-bold text-primary-foreground shadow-glow">
+          <BookNowDropdown
+            triggerClassName="btn-glow mt-7 inline-flex items-center gap-2 rounded-full bg-primary-gradient px-6 py-3.5 text-sm font-bold text-primary-foreground shadow-glow"
+          >
             Start Booking <ArrowRight className="h-4 w-4" />
-          </Link>
+          </BookNowDropdown>
         </div>
         <div className="reveal grid gap-3 sm:grid-cols-2">
           {[

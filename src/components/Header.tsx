@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { NAV, SITE } from "@/lib/site";
 import { cn } from "@/lib/utils";
+import { BookNowDropdown } from "@/components/BookNowDropdown";
 import logo from "@/assets/logo.png";
 
 export const Header = () => {
@@ -53,9 +54,9 @@ export const Header = () => {
           <a href={SITE.phoneHref} className="flex items-center gap-2 rounded-full px-3 py-2 text-sm font-semibold text-ink hover:text-primary">
             <Phone className="h-4 w-4" /> {SITE.phone}
           </a>
-          <Link to={SITE.bookHref} className="btn-glow rounded-full bg-primary-gradient px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow">
-            Book Now
-          </Link>
+          <BookNowDropdown
+            triggerClassName="btn-glow rounded-full bg-primary-gradient px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow"
+          />
         </div>
 
         <button
@@ -88,6 +89,11 @@ export const Header = () => {
             <a href={SITE.phoneHref} className="mt-2 flex items-center gap-2 rounded-xl bg-secondary px-4 py-3 text-base font-semibold text-ink">
               <Phone className="h-4 w-4 text-primary" /> {SITE.phone}
             </a>
+            <div className="mt-2 px-4">
+              <BookNowDropdown
+                triggerClassName="btn-glow w-full justify-center rounded-full bg-primary-gradient px-5 py-3 text-sm font-semibold text-primary-foreground shadow-glow"
+              />
+            </div>
           </nav>
         </div>
       )}

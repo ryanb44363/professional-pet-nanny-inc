@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
-import { Phone, Calendar, ArrowRight } from "lucide-react";
+import { Phone, ArrowRight } from "lucide-react";
 import { SITE } from "@/lib/site";
 import { TrustChips } from "@/components/TrustChips";
 import { PawTrail, PawPrint } from "@/components/PawPrint";
+import { BookNowDropdown } from "@/components/BookNowDropdown";
 import heroImg from "@/assets/hero-pets.jpg";
 
 export const Hero = () => (
@@ -28,13 +28,12 @@ export const Hero = () => (
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-3">
-          <Link
-            to={SITE.bookHref}
-            className="btn-glow group inline-flex items-center gap-2 rounded-full bg-primary-gradient px-7 py-4 text-base font-bold text-primary-foreground shadow-glow transition hover:scale-[1.02]"
+          <BookNowDropdown
+            triggerClassName="btn-glow group inline-flex items-center gap-2 rounded-full bg-primary-gradient px-7 py-4 text-base font-bold text-primary-foreground shadow-glow transition hover:scale-[1.02]"
           >
-            <Calendar className="h-5 w-5" /> Book Now
+            Book Now
             <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
-          </Link>
+          </BookNowDropdown>
           <a
             href={SITE.phoneHref}
             className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/5 px-6 py-4 text-base font-semibold text-white backdrop-blur transition hover:bg-white/10"

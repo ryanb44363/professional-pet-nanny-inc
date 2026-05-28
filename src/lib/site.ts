@@ -6,6 +6,8 @@ export const SITE = {
   phoneHref: "tel:+15132447373",
   smsHref: "sms:+15132447373",
   bookHref: "/contact",
+  newClientHref: "https://www.timetopet.com/portal/professionalpetnanny/create-account",
+  existingClientHref: "https://www.timetopet.com/portal/professionalpetnanny",
   yearsInBusiness: 20,
   serviceArea: "Greater Cincinnati & Northern Kentucky",
   url: "https://professionalpetnanny.com",

@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import { Phone, Calendar } from "lucide-react";
+import { Phone } from "lucide-react";
 import { SITE } from "@/lib/site";
 import { PawTrail } from "@/components/PawPrint";
+import { BookNowDropdown } from "@/components/BookNowDropdown";
 
 interface Props {
   eyebrow: string;
@@ -19,9 +19,9 @@ export const ServiceHero = ({ eyebrow, title, subtitle, image }: Props) => (
         <h1 className="mt-5 font-display text-5xl font-black leading-[1] text-ink sm:text-6xl">{title}</h1>
         <p className="mt-5 max-w-xl text-lg text-muted-foreground">{subtitle}</p>
         <div className="mt-7 flex flex-wrap gap-3">
-          <Link to={SITE.bookHref} className="btn-glow inline-flex items-center gap-2 rounded-full bg-primary-gradient px-6 py-3.5 text-sm font-bold text-primary-foreground shadow-glow">
-            <Calendar className="h-4 w-4" /> Book Now
-          </Link>
+          <BookNowDropdown
+            triggerClassName="btn-glow inline-flex items-center gap-2 rounded-full bg-primary-gradient px-6 py-3.5 text-sm font-bold text-primary-foreground shadow-glow"
+          />
           <a href={SITE.phoneHref} className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-3.5 text-sm font-semibold text-ink hover:border-primary">
             <Phone className="h-4 w-4 text-primary" /> {SITE.phone}
           </a>
