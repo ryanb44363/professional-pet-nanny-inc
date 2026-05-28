@@ -1,6 +1,6 @@
-import { Phone, Calendar } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Phone } from "lucide-react";
 import { SITE } from "@/lib/site";
+import { BookNowDropdown } from "@/components/BookNowDropdown";
 
 export const StickyCTA = () => (
   <div className="fixed bottom-0 inset-x-0 z-40 border-t border-primary/20 bg-ink/95 backdrop-blur-lg shadow-elegant md:bottom-4 md:inset-x-auto md:right-4 md:left-auto md:rounded-full md:border md:px-2 md:py-2">

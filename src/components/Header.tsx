@@ -3,6 +3,12 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { NAV, SITE } from "@/lib/site";
 import { cn } from "@/lib/utils";
+import { BookNowDropdown } from "@/components/BookNowDropdown";
+import logo from "@/assets/logo.png";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { Menu, X, Phone } from "lucide-react";
+import { NAV, SITE } from "@/lib/site";
+import { cn } from "@/lib/utils";
 import logo from "@/assets/logo.png";
 
 export const Header = () => {

@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
-import { Phone, Calendar, ArrowRight } from "lucide-react";
+import { Phone, ArrowRight } from "lucide-react";
 import { SITE } from "@/lib/site";
 import { TrustChips } from "@/components/TrustChips";
 import { PawTrail, PawPrint } from "@/components/PawPrint";
+import { BookNowDropdown } from "@/components/BookNowDropdown";
+import heroImg from "@/assets/hero-pets.jpg";
 import heroImg from "@/assets/hero-pets.jpg";
 
 export const Hero = () => (

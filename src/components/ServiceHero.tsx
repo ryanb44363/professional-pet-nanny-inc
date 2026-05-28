@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
-import { Phone, Calendar } from "lucide-react";
+import { Phone } from "lucide-react";
 import { SITE } from "@/lib/site";
 import { PawTrail } from "@/components/PawPrint";
-
+import { BookNowDropdown } from "@/components/BookNowDropdown";
 interface Props {
   eyebrow: string;
   title: string;

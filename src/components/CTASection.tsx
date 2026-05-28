@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
-import { Phone, Calendar } from "lucide-react";
+import { Phone } from "lucide-react";
 import { SITE } from "@/lib/site";
 import { PawTrail } from "@/components/PawPrint";
-
+import { BookNowDropdown } from "@/components/BookNowDropdown";
 export const CTASection = () => (
   <section className="container-px mx-auto py-20">
     <div className="relative overflow-hidden rounded-3xl bg-hero p-10 text-center text-white shadow-elegant md:p-16">
