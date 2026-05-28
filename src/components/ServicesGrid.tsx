@@ -1,12 +1,21 @@
 import { Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, LayoutGrid } from "lucide-react";
 import dogImg from "@/assets/dog-walking.jpg";
 import petImg from "@/assets/pet-sitting.jpg";
 import nightImg from "@/assets/overnight.jpg";
 import puppyImg from "@/assets/smart-puppy.jpg";
 import emergencyImg from "@/assets/emergency-pet.jpg";
 
-const services = [
+type Service = {
+  title: string;
+  desc: string;
+  img?: string;
+  to: string;
+  tag?: string;
+  viewAll?: boolean;
+};
+
+const services: Service[] = [
   {
     title: "Dog Walking",
     desc: "Reliable, timely walks with your regular, dedicated dog walker. Reserve regular, as-needed, or same-day walks.",
@@ -39,7 +48,14 @@ const services = [
     img: emergencyImg,
     to: "/emergency-pet-sitting",
   },
+  {
+    title: "View All Services",
+    desc: "See every service we offer in one place — compare options and find the perfect fit for your pet's routine.",
+    to: "/services",
+    viewAll: true,
+  },
 ];
+
 export const ServicesGrid = () => (
   <div className="grid gap-6 md:grid-cols-3">
     {services.map((s, i) => (
@@ -50,15 +66,23 @@ export const ServicesGrid = () => (
         style={{ transitionDelay: `${i * 80}ms` }}
       >
         <div className="relative aspect-[4/3] overflow-hidden">
-          <img
-            src={s.img}
-            alt={s.title}
-            loading="lazy"
-            width={1280}
-            height={896}
-            className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-transparent" />
+          {s.viewAll ? (
+            <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-primary via-primary to-primary-glow">
+              <LayoutGrid className="h-20 w-20 text-primary-foreground/90" strokeWidth={1.5} />
+            </div>
+          ) : (
+            <>
+              <img
+                src={s.img}
+                alt={s.title}
+                loading="lazy"
+                width={1280}
+                height={896}
+                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-transparent" />
+            </>
+          )}
           {s.tag && (
             <span className="absolute top-4 left-4 rounded-full bg-accent px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-accent-foreground">
               {s.tag}
@@ -78,3 +102,4 @@ export const ServicesGrid = () => (
     ))}
   </div>
 );
+

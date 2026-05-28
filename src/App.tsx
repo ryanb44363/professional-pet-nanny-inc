@@ -11,6 +11,8 @@ import PetSitting from "./pages/PetSitting.tsx";
 import Overnight from "./pages/Overnight.tsx";
 import SmartPuppy from "./pages/SmartPuppy.tsx";
 import EmergencyPetSitting from "./pages/EmergencyPetSitting.tsx";
+import Services from "./pages/Services.tsx";
+
 import About from "./pages/About.tsx";
 import Contact from "./pages/Contact.tsx";
 import Facts from "./pages/Facts.tsx";
@@ -45,6 +47,8 @@ const App = () => (
           <Route path="/overnight-pet-sitting" element={<Overnight />} />
           <Route path="/smart-puppy-plan" element={<SmartPuppy />} />
           <Route path="/emergency-pet-sitting" element={<EmergencyPetSitting />} />
+          <Route path="/services" element={<Services />} />
+
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/facts" element={<Facts />} />
