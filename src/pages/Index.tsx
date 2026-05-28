@@ -14,7 +14,7 @@ import { SITE } from "@/lib/site";
 
 const allServices = [
   "Dog Walking", "Pet Sitting", "Overnight Pet Sitting",
-  "Smart Puppy Plan", "Emergency Pet Sitting", "Install Sitting",
+  "Smart Puppy Plan", "Emergency Pet Sitting",
 ];
 
 const areas = [

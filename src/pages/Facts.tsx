@@ -28,7 +28,7 @@ const Facts = () => (
           <li><strong>Overnight Pet Sitting</strong> - afternoon/evening check-in plus overnight stay in the client's home.</li>
           <li><strong>Smart Puppy Plan</strong> - midday meal and potty breaks, bladder training support, play therapy, notes/text updates.</li>
           <li><strong>Emergency Pet Sitting</strong> - urgent family-emergency support for existing/known clients.</li>
-          <li><strong>Install Sitting</strong> - a bonded/insured team member present during home repair or installation windows.</li>
+          
         </ul>
 
         <h2 className="mt-8 font-display text-2xl font-bold text-ink">Service area</h2>
