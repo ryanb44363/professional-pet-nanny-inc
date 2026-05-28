@@ -63,7 +63,7 @@ export const Header = () => {
             href={SITE.newClientHref}
             className="btn-glow rounded-full bg-primary-gradient px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow"
           >
-            Book Now
+            New Customer
           </a>
         </div>
 
@@ -108,7 +108,7 @@ export const Header = () => {
                 href={SITE.newClientHref}
                 className="btn-glow w-full rounded-full bg-primary-gradient px-5 py-3 text-center text-sm font-semibold text-primary-foreground shadow-glow"
               >
-                Book Now
+                New Customer
               </a>
             </div>
           </nav>
