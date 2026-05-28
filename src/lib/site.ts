@@ -18,6 +18,8 @@ export const NAV = [
   { to: "/dog-walking", label: "Dog Walking" },
   { to: "/pet-sitting", label: "Pet Sitting" },
   { to: "/overnight-pet-sitting", label: "Overnight" },
+  { to: "/smart-puppy-plan", label: "Smart Puppy" },
+  { to: "/emergency-pet-sitting", label: "Emergency" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ];
