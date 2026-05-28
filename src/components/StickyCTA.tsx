@@ -11,7 +11,7 @@ export const StickyCTA = () => (
         icon={<Phone className="h-4 w-4" />}
         label={
           <>
-            <span className="md:hidden">Call / Text</span>
+            <span className="whitespace-nowrap md:hidden">Call/Text</span>
             <span className="hidden md:inline">{SITE.phone}</span>
           </>
         }
