@@ -38,7 +38,7 @@ export const Footer = () => (
           <li>Overnight Pet Sitting</li>
           <li>Smart Puppy Plan</li>
           <li>Emergency Pet Sitting</li>
-          <li>Install Sitting</li>
+          {/* Install Sitting removed */}
         </ul>
       </div>
 

@@ -72,7 +72,7 @@ export const InquiryForm = () => {
         <select id="service" name="service" className={inputCls} defaultValue="">
           <option value="" disabled>Choose…</option>
           <option>Dog Walking</option><option>Pet Sitting</option><option>Overnight Pet Sitting</option>
-          <option>Smart Puppy Plan</option><option>Emergency Pet Sitting</option><option>Install Sitting</option>
+          <option>Smart Puppy Plan</option><option>Emergency Pet Sitting</option>
         </select>
         {errors.service && <p className={errCls}>{errors.service}</p>}
       </div>

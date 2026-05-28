@@ -66,7 +66,7 @@ const Overnight = () => (
           {[
             { t: "Smart Puppy Plan", d: "Midday meal & potty breaks, bladder training support, play therapy, and notes/text updates throughout the workday." },
             { t: "Emergency Pet Sitting", d: "Urgent family-emergency support for existing or known clients where care needs can be quickly confirmed." },
-            { t: "Install Sitting", d: "A bonded, insured team member present in your home during repair or installation appointments." },
+            // removed: Install Sitting
           ].map((s, i) => (
             <div key={s.t} className="reveal card-hover rounded-2xl bg-card p-6 shadow-card" style={{ transitionDelay: `${i * 60}ms` }}>
               <h3 className="font-display text-xl font-bold text-ink">{s.t}</h3>
