@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, MessageSquare } from "lucide-react";
 import { SITE, NAV } from "@/lib/site";
 import { PawPrint } from "@/components/PawPrint";
 
