@@ -1,6 +1,5 @@
 import { Phone } from "lucide-react";
 import { SITE } from "@/lib/site";
-import { BookNowDropdown } from "@/components/BookNowDropdown";
 
 export const StickyCTA = () => (
   <div className="fixed bottom-0 inset-x-0 z-40 border-t border-primary/20 bg-ink/95 backdrop-blur-lg shadow-elegant md:bottom-4 md:inset-x-auto md:right-4 md:left-auto md:rounded-full md:border md:px-2 md:py-2">
@@ -13,10 +12,18 @@ export const StickyCTA = () => (
         <span className="md:hidden">Call</span>
         <span className="hidden md:inline">{SITE.phone}</span>
       </a>
-      <BookNowDropdown
-        triggerClassName="btn-glow flex flex-1 items-center justify-center gap-2 rounded-full bg-primary-gradient px-4 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition hover:scale-[1.02] md:flex-none md:px-6"
-        showIcon={false}
-      />
+      <a
+        href={SITE.existingClientHref}
+        className="flex flex-1 items-center justify-center rounded-full bg-white/5 px-4 py-3 text-xs font-semibold text-white/80 transition hover:bg-white/15 md:flex-none md:px-4 md:text-sm"
+      >
+        Existing Customer
+      </a>
+      <a
+        href={SITE.newClientHref}
+        className="btn-glow flex flex-1 items-center justify-center gap-2 rounded-full bg-primary-gradient px-4 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition hover:scale-[1.02] md:flex-none md:px-6"
+      >
+        Book Now
+      </a>
     </div>
   </div>
 );
