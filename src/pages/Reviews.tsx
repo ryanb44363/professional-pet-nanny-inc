@@ -57,7 +57,6 @@ const Reviews = () => {
           <ReviewBadges variant="dark" className="mt-8" />
         </div>
       </section>
-      </section>
 
       <section className="container-px mx-auto py-16">
         <div className="mx-auto mb-10 max-w-xl">
