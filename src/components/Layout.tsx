@@ -3,6 +3,11 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { StickyCTA } from "@/components/StickyCTA";
 import { useReveal } from "@/hooks/useReveal";
+import { ExternalLink } from "lucide-react";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { StickyCTA } from "@/components/StickyCTA";
+import { useReveal } from "@/hooks/useReveal";
 
 export const Layout = ({ children }: { children: ReactNode }) => {
   useReveal();
