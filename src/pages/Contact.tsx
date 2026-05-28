@@ -1,4 +1,4 @@
-import { Phone, MessageSquare, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, MessageSquare, Mail, MapPin, Clock, UserPlus, LogIn } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEO } from "@/components/SEO";
 import { InquiryForm } from "@/components/InquiryForm";
@@ -42,6 +42,42 @@ const Contact = () => (
           </div>
         </a>
       ))}
+    </section>
+
+    {/* Portal booking */}
+    <section className="container-px mx-auto pb-20">
+      <div className="grid gap-6 md:grid-cols-2">
+        <a
+          href={SITE.newClientHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card-hover group flex items-center gap-5 rounded-3xl bg-card p-8 shadow-elegant transition hover:border-primary/30"
+        >
+          <div className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl bg-primary-gradient text-primary-foreground shadow-glow transition group-hover:scale-[1.04]">
+            <UserPlus className="h-7 w-7" />
+          </div>
+          <div>
+            <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">New Client</div>
+            <div className="mt-1 font-display text-xl font-bold text-ink">Create your account</div>
+            <div className="mt-1 text-sm text-muted-foreground">Set up your profile and book your first visit.</div>
+          </div>
+        </a>
+        <a
+          href={SITE.existingClientHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card-hover group flex items-center gap-5 rounded-3xl bg-card p-8 shadow-elegant transition hover:border-primary/30"
+        >
+          <div className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl bg-primary-gradient text-primary-foreground shadow-glow transition group-hover:scale-[1.04]">
+            <LogIn className="h-7 w-7" />
+          </div>
+          <div>
+            <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Existing Client</div>
+            <div className="mt-1 font-display text-xl font-bold text-ink">Log in to portal</div>
+            <div className="mt-1 text-sm text-muted-foreground">Manage visits, update info, and request care.</div>
+          </div>
+        </a>
+      </div>
     </section>
 
     <section className="container-px mx-auto pb-24">
