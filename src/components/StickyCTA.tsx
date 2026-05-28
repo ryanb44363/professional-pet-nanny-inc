@@ -7,7 +7,7 @@ export const StickyCTA = () => (
     <div className="container-px mx-auto flex items-center justify-between gap-2 py-2 md:p-0 md:gap-2">
       <PhoneActions
         align="start"
-        triggerClassName="btn-glow flex flex-1 items-center justify-center gap-2 rounded-full bg-white/10 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/20 md:flex-none md:px-5"
+        triggerClassName="btn-glow flex flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-white/10 px-3 py-3 text-sm font-semibold text-white transition hover:bg-white/20 md:flex-none md:px-5"
         icon={<Phone className="h-4 w-4" />}
         label={
           <>
