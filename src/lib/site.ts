@@ -21,5 +21,7 @@ export const NAV = [
   { to: "/smart-puppy-plan", label: "Smart Puppy" },
   { to: "/emergency-pet-sitting", label: "Emergency" },
   { to: "/about", label: "About" },
+  { to: "/about", label: "About" },
+  { to: "/blog", label: "Blog" },
   { to: "/contact", label: "Contact" },
 ];
