@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { NAV, SITE } from "@/lib/site";
 import { cn } from "@/lib/utils";
+import { PhoneActions } from "@/components/PhoneActions";
 import logo from "@/assets/logo.png";
 
 export const Header = () => {
@@ -50,9 +51,10 @@ export const Header = () => {
         </nav>
 
         <div className="hidden items-center gap-2 lg:flex">
-          <a href={SITE.phoneHref} className="flex items-center gap-2 rounded-full px-3 py-2 text-sm font-semibold text-ink hover:text-primary">
-            <Phone className="h-4 w-4" /> {SITE.phone}
-          </a>
+          <PhoneActions
+            triggerClassName="flex items-center gap-2 rounded-full px-3 py-2 text-sm font-semibold text-ink hover:text-primary"
+          />
+
           <a
             href={SITE.existingClientHref}
             className="rounded-full px-3 py-2 text-sm font-semibold text-ink/70 hover:text-primary transition"
@@ -94,9 +96,12 @@ export const Header = () => {
                 {n.label}
               </NavLink>
             ))}
-            <a href={SITE.phoneHref} className="mt-2 flex items-center gap-2 rounded-xl bg-secondary px-4 py-3 text-base font-semibold text-ink">
-              <Phone className="h-4 w-4 text-primary" /> {SITE.phone}
-            </a>
+            <PhoneActions
+              align="start"
+              triggerClassName="mt-2 flex w-full items-center gap-2 rounded-xl bg-secondary px-4 py-3 text-base font-semibold text-ink"
+              icon={<Phone className="h-4 w-4 text-primary" />}
+            />
+
             <div className="mt-2 flex flex-col gap-2 px-4">
               <a
                 href={SITE.existingClientHref}

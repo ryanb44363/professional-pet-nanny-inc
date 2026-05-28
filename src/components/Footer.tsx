@@ -46,7 +46,8 @@ export const Footer = () => (
       <div>
         <h4 className="mb-3 font-display text-base font-bold text-white">Contact</h4>
         <ul className="space-y-3 text-sm">
-          <li><a href={SITE.phoneHref} className="flex items-center gap-2 text-white/80 hover:text-primary-glow"><Phone className="h-4 w-4" />{SITE.phone}</a></li>
+          <li><a href={SITE.phoneHref} className="flex items-center gap-2 text-white/80 hover:text-primary-glow"><Phone className="h-4 w-4" />Call {SITE.phone}</a></li>
+          <li><a href={SITE.smsHref} className="flex items-center gap-2 text-white/80 hover:text-primary-glow"><MessageSquare className="h-4 w-4" />Text {SITE.phone}</a></li>
           <li><a href="mailto:hello@professionalpetnanny.com" className="flex items-center gap-2 text-white/80 hover:text-primary-glow"><Mail className="h-4 w-4" />hello@professionalpetnanny.com</a></li>
           <li className="flex items-center gap-2 text-white/70"><MapPin className="h-4 w-4" />{SITE.serviceArea}</li>
         </ul>
