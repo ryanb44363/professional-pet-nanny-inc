@@ -1,4 +1,5 @@
 import { Star, Quote } from "lucide-react";
+import { ReviewBadges } from "@/components/ReviewBadges";
 
 const reviews = [
   {
@@ -19,25 +20,31 @@ const reviews = [
 ];
 
 export const Testimonials = () => (
-  <div className="grid gap-6 md:grid-cols-3">
-    {reviews.map((r, i) => (
-      <figure
-        key={r.name}
-        className="reveal card-hover relative rounded-3xl bg-card p-7 shadow-card"
-        style={{ transitionDelay: `${i * 80}ms` }}
-      >
-        <Quote className="absolute -top-4 left-6 h-10 w-10 rounded-2xl bg-primary-gradient p-2 text-primary-foreground shadow-glow" />
-        <div className="mt-3 flex gap-0.5 text-accent">
-          {Array.from({ length: 5 }).map((_, k) => (
-            <Star key={k} className="h-4 w-4 fill-current" />
-          ))}
-        </div>
-        <blockquote className="mt-4 text-sm leading-relaxed text-ink">"{r.text}"</blockquote>
-        <figcaption className="mt-5 border-t border-border pt-4">
-          <div className="text-sm font-bold text-ink">{r.name}</div>
-          <div className="text-xs text-muted-foreground">{r.location}</div>
-        </figcaption>
-      </figure>
-    ))}
+  <div>
+    <div className="grid gap-6 md:grid-cols-3">
+      {reviews.map((r, i) => (
+        <figure
+          key={r.name}
+          className="reveal card-hover relative rounded-3xl bg-card p-7 shadow-card"
+          style={{ transitionDelay: `${i * 80}ms` }}
+        >
+          <Quote className="absolute -top-4 left-6 h-10 w-10 rounded-2xl bg-primary-gradient p-2 text-primary-foreground shadow-glow" />
+          <div className="mt-3 flex gap-0.5 text-accent">
+            {Array.from({ length: 5 }).map((_, k) => (
+              <Star key={k} className="h-4 w-4 fill-current" />
+            ))}
+          </div>
+          <blockquote className="mt-4 text-sm leading-relaxed text-ink">"{r.text}"</blockquote>
+          <figcaption className="mt-5 border-t border-border pt-4">
+            <div className="text-sm font-bold text-ink">{r.name}</div>
+            <div className="text-xs text-muted-foreground">{r.location}</div>
+          </figcaption>
+        </figure>
+      ))}
+    </div>
+    <p className="mt-12 text-center text-xs font-bold uppercase tracking-widest text-muted-foreground">
+      Reviewed across
+    </p>
+    <ReviewBadges className="mt-4" />
   </div>
 );

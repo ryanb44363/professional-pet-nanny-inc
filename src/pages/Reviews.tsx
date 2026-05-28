@@ -4,6 +4,7 @@ import { Layout } from "@/components/Layout";
 import { SEO } from "@/components/SEO";
 import { CTASection } from "@/components/CTASection";
 import { PawTrail } from "@/components/PawPrint";
+import { ReviewBadges } from "@/components/ReviewBadges";
 import reviewsData from "@/data/reviews.json";
 
 type Review = { name: string; stars: number; text: string; date: string };
@@ -53,6 +54,7 @@ const Reviews = () => {
               <Star key={k} className="h-6 w-6 fill-current" />
             ))}
           </div>
+          <ReviewBadges variant="dark" className="mt-8" />
         </div>
       </section>
 
