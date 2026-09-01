@@ -72,6 +72,22 @@ const App = () => (
           <Route path="/terms" element={<TermsPage />} />
           <Route path="/disclaimer" element={<DisclaimerPage />} />
           <Route path="/accessibility" element={<AccessibilityPage />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/employment" element={<Employment />} />
+          <Route path="/pet-sitter-instructions" element={<PetSitterInstructions />} />
+
+          {/* Legacy professionalpetnanny.com URLs */}
+          <Route path="/about-us" element={<Navigate to="/about" replace />} />
+          <Route path="/privacy-policy-2" element={<Navigate to="/privacy" replace />} />
+          <Route path="/pet-play-nanny" element={<Navigate to="/pet-sitting" replace />} />
+          <Route path="/daily-24-hour-reservations" element={<Navigate to="/overnight-pet-sitting" replace />} />
+          <Route path="/install-sitting" element={<Navigate to="/services" replace />} />
+          <Route path="/cincinnati-dog-walking" element={<Navigate to="/dog-walking" replace />} />
+          <Route path="/overnight-pet-sitting-3" element={<Navigate to="/overnight-pet-sitting" replace />} />
+          <Route path="/contact-us" element={<Navigate to="/contact" replace />} />
+          <Route path="/emergency-plan" element={<Navigate to="/emergency-pet-sitting" replace />} />
+          <Route path="/book-a-cincinnati-pet-sitter" element={<ExternalRedirect to={SITE.newClientHref} />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
