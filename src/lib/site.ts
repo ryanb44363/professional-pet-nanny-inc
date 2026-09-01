@@ -20,6 +20,7 @@ export const NAV = [
   { to: "/overnight-pet-sitting", label: "Overnight" },
   { to: "/smart-puppy-plan", label: "Smart Puppy" },
   { to: "/emergency-pet-sitting", label: "Emergency" },
+  { to: "/rates", label: "Rates" },
   { to: "/about", label: "About" },
   { to: "/reviews", label: "Reviews" },
   { to: "/blog", label: "Blog" },
